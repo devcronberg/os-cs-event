@@ -4,7 +4,11 @@ Her en lille simpel opgave i brugen af hændelser/delegates, som samtidig kan br
 
 Start med at skabe en konsol app og tilføj en simpel Person-klasse som eksempelvis:
 
+![](billeder/pic0.png)
+
 Klassen består af et antal private felter og tilhørende egenskaber (get/set). Du skal nu tilføje en hændelse (event) til klassen kaldet PropertyChanged.
+
+![](billeder/pic1.png)
 
 I første omgang kan du bruge den indbyggede EventHandler-delegate, navngive denne PropertyChanged, og blot kalde den med en ny instans af EventArgs hver gang en af egenskaberne ændre sig. Du bør placere kaldet til hændelsen i en privat metode (måske navngivet OnPropertyChangedEventHandler), og så blot kalde den i egenskabernes Set. Test koden i Main som eksempelvis:
 

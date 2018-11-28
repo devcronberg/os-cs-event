@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -15,11 +15,11 @@ namespace PropertyChanged
 
         public int Id
         {
-            get { return id; }
+            get => this.id;
             set
             {
-                OnPropertyChangedEventHandler();
-                id = value;
+                this.OnPropertyChangedEventHandler();
+                this.id = value;
             }
         }
 
@@ -27,21 +27,15 @@ namespace PropertyChanged
 
         public int Name
         {
-            get { return name; }
+            get => this.name;
             set
             {
-                OnPropertyChangedEventHandler();
-                name = value;
+                this.OnPropertyChangedEventHandler();
+                this.name = value;
             }
         }
 
-        private void OnPropertyChangedEventHandler()
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new EventArgs());
-            }
-        }
+        private void OnPropertyChangedEventHandler() => PropertyChanged?.Invoke(this, new EventArgs());
 
     }
 }

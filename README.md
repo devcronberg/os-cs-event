@@ -1,4 +1,4 @@
-# OpgaveService C#: PropertyChanged
+# Opgave i C#: PropertyChanged
 
 Her en lille simpel opgave i brugen af hændelser/delegates, som samtidig kan bruges som inspiration ved design af klasser. Opgaven er i sig selv simpel – sørg at et objekt smider en hændelse når en egenskab tilrettes. Det kan bruges til mange ting som eksempelvis log, fejlhåndtering og databinding på brugerflader.
 

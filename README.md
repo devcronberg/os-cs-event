@@ -36,7 +36,9 @@ p3.PropertyChanged += (s, e) => Console.WriteLine("Egenskab " +
 p3.Id = 1;  // skulle gerne resulterer i "Egenskab Id rettet" på consol
 ```
 
-Start med at skabe din helt egen PropertyChangedEventHandler, og herefter i stedet bruge den anbefalede og indbyggede EventHandler<> (se evt. løsning).
+Start med at skabe din helt egen PropertyChangedEventHandler, og herefter i stedet bruge den anbefalede og indbyggede EventHandler<> (se evt. [løsning](https://github.com/devcronberg/os-cs-propchanged/tree/master/PropertyChanged)).
+
+> Bemærk, at [løsningen](https://github.com/devcronberg/os-cs-propchanged/tree/master/PropertyChanged) er et .NET Framework 4.6.1 projekt, men du kan blot bruge .NET Core.
 
 Når du har fået det hele til at spille kan du se på Microsofts forslag til en ”best-practice” – nemlig implementation af INotifyPropertyChanged (fra System.ComponentModel). Dette interface benyttes blandt andet til databinding i WinForm og WPF applikationer.
 
